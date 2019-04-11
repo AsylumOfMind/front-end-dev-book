@@ -1,0 +1,159 @@
+
+.joker {
+    animation: joker 3s ease-in-out forwards;
+}
+
+@keyframes joker {
+    0% {transform: rotateY(0deg);}
+    
+    10% {transform: rotateY(90deg) rotateX(15deg);}
+    
+    50% {transform: rotateY(180deg);}
+    
+    65% {transform: rotateY(270deg) rotateX(-15deg);}
+    
+    100% {transform: rotateY(360deg);}
+}
+
+.morgana {
+    position: absolute;
+    animation: morgana 3s ease-in-out forwards;
+}
+
+@keyframes morgana {
+    0% {left:0%; top:0%; width:30%; height:auto;}
+    15% {left:70%; top:0%;}
+    30% {left:0%; top:70%;}
+    45% {left:70%; top:70%;}
+    50% {left:35%; top:35%; width: 30%; transform: rotate3d(0,0,0,0deg);}
+    65% {width: 30%; transform: rotate3d(1,1,0,720deg);}
+    80% {width: 30%; transform: rotate3d(1,-1,0,-720deg);}
+    100% {left:0%; top:0%; width: 100%;} 
+}
+
+.ryuji {
+    position: absolute;
+    animation: ryuji 3s linear forwards;
+}
+
+@keyframes ryuji {
+    0% {top:0%; right:0%; bottom:70%; left:70%; width:30%; height:30%;}
+    10% {top:0%; right:0%; bottom:70%; left:0%; width:100%; height:30%;}
+    20% {top:0%; right:70%; bottom:70%; left:0%; width:30%; height:30%;}
+    30% {top:0%; right:70%; bottom:0%; left:0%; width:30%; height:100%;}
+    40% {top:70%; right:70%; bottom:0%; left:0%; width:30%; height:30%;}
+    50% {top:70%; right:0%; bottom:0%; left:0%; width:100%; height:30%;}
+    60% {top:70%; right:0%; bottom:0%; left:70%; width:30%; height:30%;}
+    70% {top:35%; right:0%; bottom:0%; left:70%; width:30%; height:65%;}
+    78% {top:35%; right:0%; bottom:35%; left:70%; width:30%; height:30%;}
+    84% {top:35%; right:0%; bottom:35%; left:35%; width:65%; height:30%;}
+    92% {top:35%; right:35%; bottom:35%; left:35%; width:30%; height:30%;}
+    100% {top:0%; right:0%; bottom:0%; left:0%; width:100%; height:auto;}
+}
+
+.ann {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+    animation: ann 3s linear forwards;
+}
+
+@keyframes ann {
+    0% {clip: rect(0px,320px,1024px,0px);}
+    20% {clip: rect(0px,640px,1024px,320px);}
+    40% {clip: rect(0px,960px,1024px,640px);}
+    60% {clip: rect(0px,1280px,1024px,960px);}
+    80% {clip: rect(0px,1600px,1024px,1280px);}
+    100% {clip: rect(0px,1600px,1024px,0px);}
+}
+
+.yusuke {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+    animation: yusuke 3s linear forwards;
+}
+
+@keyframes yusuke {
+    0% {clip: rect(140px,1600px,240px,1600px);}
+    5%,9.999% {clip: rect(140px,1600px,240px,0px);}
+    10% {clip: rect(340px,1600px,440px,1600px);}
+    15%,19.999% {clip: rect(340px,1600px,440px,0px);}
+    20% {clip: rect(540px,1600px,640px,1600px);}
+    25%,29.999% {clip: rect(540px,1600px,640px,0px);}
+    30% {clip: rect(0px,800px,1025px,800px);}
+    100% {clip: rect(0px,1600px,1025px,0px);}
+   /* 40% {}
+    100% {clip: rect(0px,1600px,1025px,0px);}*/
+
+/*WHY DOESN'T THIS WORK??? IT WORKS FOR ANN*/
+/*0% {clip: rect(0px,1600px,340px,1600px);}
+    5%,9.999% {clip: rect(0px,1600px,340px,0px);}
+    10% {clip: rect(340px,1600px,685px,1600px);}
+    15%,19.999% {clip: rect(340px,1600px,685px,0px);}
+    20% {clip: rect(685px,1600px,1025px,1600px);}
+    25%,29.999% {clip: rect(685px,1600px,1025px,0px);}
+    30% {clip: rect(0px,1600px,1025px,0px);}
+    100% {clip: rect(0px,1600px,1025px,0px);}*/
+}
+
+.makoto {
+    animation: makoto-spin 3s ease-in-out forwards, makoto-hammer 2s ease-in-out 3s forwards;
+}
+
+@keyframes makoto-spin {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(945deg);}
+    60% {transform: rotate(-90deg);}
+    70% {transform: rotate(45deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes makoto-hammer {
+    0% {transform: skew(0deg);}
+    10% {transform-origin: 20%; transform: skew(40deg);}
+    100% {transform: skew(0deg);}
+}
+
+.futaba {
+    animation: futaba 3s linear reverse;
+}
+
+@keyframes futaba {
+    0% {transform-origin: center;}
+    100% {transform: rotate3d(1,5,1,900deg);}
+}
+
+.haru {
+    animation: haru 6s linear forwards;
+    
+}
+
+@keyframes haru {
+    0% {filter: brightness(100%) contrast(100%) grayscale(0%) hue-rotate(0deg)}
+    5%,9.999% {filter: brightness(100%) contrast(100%) grayscale(0%) hue-rotate(0deg);}
+    10% {filter: brightness(250%) contrast(25%) grayscale(50%) hue-rotate(15deg);}
+    20%,29.999% {filter: brightness(100%) contrast(100%) grayscale(0%) hue-rotate(0deg);}
+    30% {filter: brightness(250%) contrast(25%) grayscale(50%) hue-rotate(15deg);}
+    35%,39.999% {filter: brightness(100%) contrast(100%) grayscale(0%) hue-rotate(0deg);}
+    40% {filter: brightness(250%) contrast(25%) grayscale(50%) hue-rotate(15deg);}
+    60%,69.999% {filter: brightness(100%) contrast(100%) grayscale(0%) hue-rotate(0deg);}
+    70% {filter: brightness(250%) contrast(25%) grayscale(50%) hue-rotate(15deg);}
+    100% {filter: brightness(100%) contrast(100%) grayscale(0%) hue-rotate(0deg);}
+    
+}
+
+.akechi {
+    animation: akechi 6s ease-in forwards;
+}
+
+@keyframes akechi {
+    0% {} 
+    5%,7% {transform: scaleX(-1);filter: invert(100%) hue-rotate(60deg) contrast(125%);}
+    10%,12% {transform: scaleX(1);filter: invert(100%) hue-rotate(120deg) contrast(150%);}
+    15%,17% {transform: scaleX(-1);filter: invert(100%) hue-rotate(240deg) contrast(175%);}
+    20%,22% {transform: scaleX(1);filter: invert(100%) hue-rotate(300deg) contrast(200%);}
+    100% {}
+}

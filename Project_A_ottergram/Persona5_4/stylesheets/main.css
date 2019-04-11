@@ -1,0 +1,217 @@
+@font-face {
+	font-family: 'AtlasoftheMagi';
+	src: url('fonts/AtlasoftheMagi.eot');
+  src: url('fonts/fonts/AtlasoftheMagi.eot?#iefix') format('embedded-opentype'),
+       url('fonts/AtlasoftheMagi.woff') format('woff'),
+       url('fonts/AtlasoftheMagi.ttf') format('truetype'),
+       url('fonts/AtlasoftheMagi.svg#AtlasoftheMagi') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'DJB';
+	src: url('fonts/DJB.eot');
+  src: url('fonts/fonts/DJB.eot?#iefix') format('embedded-opentype'),
+       url('fonts/DJB.woff') format('woff'),
+       url('fonts/DJB.ttf') format('truetype'),
+       url('fonts/DJB.svg#DJB') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+  font-size: 16px
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  
+  background: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*--header-----------------------*/
+.main-header {
+  flex: 0 2 auto;
+  z-index: 5;
+}
+
+.logo-text {
+  background: white;
+  text-align: center;
+  font-family: DJB;
+  font-size: 25px;
+  margin: 15px auto;
+}
+
+/*--body-----------------------*/
+.Persona5-body {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto 20px auto 20px;
+}
+
+/*--nav-----------------------*/
+.Persona5-nav, .Persona5-ads {
+  flex: 0 3 auto;
+  z-index: 9;
+  background: black;
+}
+
+.thumbnail-item, .random-thumbnail-item {
+  display:inline-block;
+  min-width: 20%;
+  max-width: 100%;
+  border: 1px solid rgb(100%, 100%, 100%, 0.8);
+  border: 1px solid rgba(100%, 100%, 100%, 0.8);
+  /*margin: 10%;*/
+}
+
+.thumbnail-list {
+  order: 2;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+
+.thumbnail-image {
+  display:block;
+  width: 100%;
+}
+
+.thumbnail-title {
+  display: block;
+  margin: 0;
+  /*padding: 4px 10px;*/
+  background: #314E6E;
+  color: #3E9CFE;
+  font-size: 18px;
+  text-align: center;
+}
+
+/*--main-----------------------*/
+.Persona5-main {
+  flex: 3 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 55vw;
+  position: relative;
+}
+
+.detail-image-frame {
+  position: relative;
+  text-align: center;
+  min-width: 90%;
+  max-width: 90%;
+  height: 90%;
+}
+
+.detail-image, .detail-video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.center-video {
+  background: purple;
+  z-index: 5;
+  width:100%;
+  height:100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+.detail-video {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.detail-image-title {
+  position: absolute;
+  bottom: 4%;
+  left: 6%;
+  z-index: 9999;
+  
+  font-family: AtlasoftheMagi;
+  color: white;
+  text-shadow: rgba(0,0,0,0.9) 3px 4px 5px;
+  font-size: 25px;
+  
+}
+
+.Persona5-ads {
+  direction: rtl;
+}
+
+/*--footer------------------------*/
+
+.main-footer {
+  flex: 0 2 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  z-index: 4;
+}
+
+.tn {
+  text-decoration: none;
+  list-style: none;
+}
+
+.main-footer p {
+  margin: 16px;
+  padding: 0
+}
+
+.main-footer p.footer-info {
+  font-weight: bold;
+  color:  #ffffff;
+}
+
+.main-footer .footer-right {
+	margin: 6px 3px auto 3px;
+}
+
+.main-footer .footer-right ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-footer .footer-right a {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 32px;
+	margin-left: 3px;
+}
+
+
+/*-----------desktop or tablet in landscape--------------------*/

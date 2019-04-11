@@ -1,0 +1,150 @@
+@font-face {
+	font-family: 'AtlasoftheMagi';
+	src: url('fonts/AtlasoftheMagi.eot');
+  src: url('fonts/fonts/AtlasoftheMagi.eot?#iefix') format('embedded-opentype'),
+       url('fonts/AtlasoftheMagi.woff') format('woff'),
+       url('fonts/AtlasoftheMagi.ttf') format('truetype'),
+       url('fonts/AtlasoftheMagi.svg#AtlasoftheMagi') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'DJB';
+	src: url('fonts/DJB.eot');
+  src: url('fonts/fonts/DJB.eot?#iefix') format('embedded-opentype'),
+       url('fonts/DJB.woff') format('woff'),
+       url('fonts/DJB.ttf') format('truetype'),
+       url('fonts/DJB.svg#DJB') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  
+  font-size: 10px;
+  background: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  flex: 0 1 auto;
+}
+
+.logo-text {
+  background: white;
+  text-align: center;
+  font-family: DJB;
+  font-size: 50px;
+}
+
+.main-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/*.thumbnail-item + .thumbnail-item {
+  margin-top: 10px;
+}*/
+
+.thumbnail-item {
+  /*display:block;*/
+  display:inline-block;
+  /*width: 120px;*/
+  min-width: 120px;
+  max-width: 120px;
+  border: 1px solid rgb(100%, 100%, 100%, 0.8);
+  border: 1px solid rgba(100%, 100%, 100%, 0.8);
+}
+
+.thumbnail-list {
+  flex: 0 1 auto;
+  order: 2;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.thumbnail-image {
+  display:block;
+  width: 100%;
+}
+
+.thumbnail-title {
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+
+  background: #314E6E;
+  color: #3E9CFE;
+  
+  font-size: 18px;
+}
+
+.detail-image-container {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-image-frame {
+  position: relative;
+  text-align: center;
+}
+
+.detail-image {
+  width: 90%;
+}
+
+.detail-image-title {
+  position: absolute;
+  bottom: 4%;
+  left: 6%;
+  
+  font-family: AtlasoftheMagi;
+  color: white;
+  text-shadow: rgba(0,0,0,0.9) 3px 4px 5px;
+  font-size: 30px;
+}
+
+@media all and (min-width: 768px) {
+  .main-content {
+    flex-direction: row;
+    overflow: hidden;
+  }
+  
+  .thumbnail-list {
+    flex-direction: column;
+    order: 0;
+    overflow-x: hidden;  /*added*/
+    margin-left: 20px;
+  }
+  
+  .thumbnail-item {
+    max-width: 260px;
+  }
+  
+  .thumbnail-item + .thumbnail-item {
+    margin-top: 20px;
+  }
+  
+  .detail-image-title {
+    
+  font-size: 50px;
+  }
+}

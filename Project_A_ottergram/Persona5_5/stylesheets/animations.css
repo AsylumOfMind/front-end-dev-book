@@ -1,0 +1,60 @@
+
+.joker {
+    animation: joker 3s ease-in-out forwards;
+}
+
+@keyframes joker {
+    0% {transform: rotateY(0deg);}
+    
+    10% {transform: rotateY(90deg) rotateX(15deg);}
+    
+    50% {transform: rotateY(180deg);}
+    
+    65% {transform: rotateY(270deg) rotateX(-15deg);}
+    
+    100% {transform: rotateY(360deg);}
+}
+
+.morgana {
+    position: absolute;
+    animation: morgana 3s ease-in-out forwards;
+}
+
+@keyframes morgana {
+    0% {left:0%; top:0%; width:30%; height:auto;}
+    15% {left:70%; top:0%;}
+    30% {left:0%; top:70%;}
+    45% {left:70%; top:70%;}
+    50% {left:35%; top:35%; width: 30%; transform: rotate3d(0,0,0,0deg);}
+    65% {width: 30%; transform: rotate3d(1,1,0,720deg);}
+    80% {width: 30%; transform: rotate3d(1,-1,0,-720deg);}
+    100% {left:0%; top:0%; width: 100%;} 
+}
+
+.ryuji {
+    position: absolute;
+    animation: ryuji 3s linear forwards;
+}
+
+@keyframes ryuji {
+    0% {top:0%; right:0%; bottom:70%; left:70%; width:30%; height:30%;}
+    10% {top:0%; right:0%; bottom:70%; left:0%; width:100%; height:30%;}
+    20% {top:0%; right:70%; bottom:70%; left:0%; width:30%; height:30%;}
+    30% {top:0%; right:70%; bottom:0%; left:0%; width:30%; height:100%;}
+    40% {top:70%; right:70%; bottom:0%; left:0%; width:30%; height:30%;}
+    50% {top:70%; right:0%; bottom:0%; left:0%; width:100%; height:30%;}
+    60% {top:70%; right:0%; bottom:0%; left:70%; width:30%; height:30%;}
+    70% {top:35%; right:0%; bottom:0%; left:70%; width:30%; height:65%;}
+    78% {top:35%; right:0%; bottom:35%; left:70%; width:30%; height:30%;}
+    84% {top:35%; right:0%; bottom:35%; left:35%; width:65%; height:30%;}
+    92% {top:35%; right:35%; bottom:35%; left:35%; width:30%; height:30%;}
+    100% {top:0%; right:0%; bottom:0%; left:0%; width:100%; height:auto;}
+}
+
+.ann {
+    position: absolute;
+}
+
+@keyframes ann {
+    0% {;}
+}
