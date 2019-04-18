@@ -1,5 +1,5 @@
 I have no idea what I am doing when it comes to using a repository, it's only by happenstance that I even figured out how through trial and error to update with the most recent file -_-
----
+
 
 I fixed the previous error by fixing the capitalization on serverURL to serverUrl, but it still refuses to log serverResponse. I am really lost on how this works. I was able to pick apart and understand everthing from the previous chapters, but this one seems to go over my head.
 
