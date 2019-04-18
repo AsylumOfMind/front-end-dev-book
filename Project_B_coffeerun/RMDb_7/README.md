@@ -1,5 +1,11 @@
 I have no idea what I am doing when it comes to using a repository, it's only by happenstance that I even figured out how through trial and error to update with the most recent file -_-
+---
 
+I fixed the previous error by fixing the capitalization on serverURL to serverUrl, but it still refuses to log serverResponse. I am really lost on how this works. I was able to pick apart and understand everthing from the previous chapters, but this one seems to go over my head.
+
+
+
+#########FIXED#################
 I am stuck and it isn't even something I added to make my life 10x more difficult this time.
 
 While trying to add the callback I ran into an issue that I can't really understand or explain. As the existing server data doesn't plug into my edited version I made my own JSON file which is in the api folder. 
