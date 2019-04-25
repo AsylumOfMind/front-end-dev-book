@@ -5,3 +5,7 @@ Ended up making a json-server to serve up the API for POSTing and GETing and tha
 Editing the program to make the current inputted data play well with the json on the server as well as restrict multiple 
 of the same entries. Deletion of entries basically coded in at this point, just needs the visual.
 Keep getting caught up in promises. :smiley-face::gunfinger:
+
+
+---
+Been up almost 24 now gonna crash for a couple and go back at it
