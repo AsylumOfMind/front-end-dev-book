@@ -1,4 +1,4 @@
-***Was finally able to get previous issue solved
+Was finally able to get previous issue solved
 Still tripping over hurdles. My face really hurts.
 Got what I think was the hard part taken care of.
 Ended up making a json-server to serve up the API for POSTing and GETing and that part now runs alright.
